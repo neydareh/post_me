@@ -1,4 +1,6 @@
 <h2><img class="avatar-small" src="<%= profileAvatar %>"> <%= profileUsername %> 
+
+  <!-- Logic to check if there is a current user session -->  
   <% if (user && !isVisitorsProfile) {
     if (isFollowing) { %>
       <form class="ml-2 d-inline" action="/removeFollow/<%= profileUsername %>" method="POST">          

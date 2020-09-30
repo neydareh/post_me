@@ -2,6 +2,8 @@
     <p class="m-0">Copyright &copy; 2019 <a href="/" class="text-muted">Post Me Twice</a>. All rights reserved.</p>
   </footer>
   
+
+  <!-- Logic to check if there is a current user session so as to enable chat option-->  
   <% if (user) { %>
     <div id="chat-wrapper" class="chat-wrapper shadow border-top border-left border-right"></div>
     <script src="/socket.io/socket.io.js"></script>
